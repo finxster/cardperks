@@ -1,0 +1,6 @@
+id;name;description;expiration_date;active;expired;card_id
+1;2% cashback;2% cashback in all orders;2025-01-19T12:16:52;true;false;3
+2;10% off;10% off any purchase, $10 max;2025-01-19T12:16:52;true;false;5
+3;50% off;50% off any purchase;2024-01-19T12:16:52;false;true;2
+4;Buy one, get 50% off second item;Buy one, get 50% off second item;;true;false;1
+5;Buy three, get one;Buy three, get one;;false;false;1

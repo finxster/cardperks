@@ -1,0 +1,26 @@
+{
+  "annotations": {
+    "changelogDate": "20240119202724"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "store",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Store",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "perk",
+      "relationshipName": "perk",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

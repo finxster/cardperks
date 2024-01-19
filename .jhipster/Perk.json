@@ -1,0 +1,49 @@
+{
+  "annotations": {
+    "changelogDate": "20240119202824"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "perk",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expirationDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "expired",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "Perk",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "store",
+      "otherEntityRelationshipName": "perk",
+      "relationshipName": "store",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "card",
+      "relationshipName": "card",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

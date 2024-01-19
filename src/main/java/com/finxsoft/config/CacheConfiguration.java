@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, com.finxsoft.domain.User.class.getName());
             createCache(cm, com.finxsoft.domain.Authority.class.getName());
             createCache(cm, com.finxsoft.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.finxsoft.domain.Card.class.getName());
+            createCache(cm, com.finxsoft.domain.Card.class.getName() + ".perks");
+            createCache(cm, com.finxsoft.domain.Store.class.getName());
+            createCache(cm, com.finxsoft.domain.Perk.class.getName());
+            createCache(cm, com.finxsoft.domain.Perk.class.getName() + ".stores");
             // jhipster-needle-ehcache-add-entry
         };
     }

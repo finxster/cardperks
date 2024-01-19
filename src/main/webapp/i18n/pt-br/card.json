@@ -1,0 +1,25 @@
+{
+  "cardperksApp": {
+    "card": {
+      "home": {
+        "title": "Cards",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Card",
+        "createOrEditLabel": "Criar ou editar Card",
+        "notFound": "Nenhum Card encontrado"
+      },
+      "created": "Um novo Card foi criado com o identificador {{ param }}",
+      "updated": "Um Card foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Card foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Card {{ id }}?"
+      },
+      "detail": {
+        "title": "Card"
+      },
+      "id": "ID",
+      "name": "Name",
+      "perk": "Perk"
+    }
+  }
+}
