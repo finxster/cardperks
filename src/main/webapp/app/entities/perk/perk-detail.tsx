@@ -67,7 +67,7 @@ export const PerkDetail = () => {
           <dt>
             <Translate contentKey="cardperksApp.perk.card">Card</Translate>
           </dt>
-          <dd>{perkEntity.card ? perkEntity.card.id : ''}</dd>
+          <dd>{perkEntity.card ? perkEntity.card.name : ''}</dd>
         </dl>
         <Button tag={Link} to="/perk" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

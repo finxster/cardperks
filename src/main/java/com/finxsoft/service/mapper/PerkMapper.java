@@ -17,5 +17,6 @@ public interface PerkMapper extends EntityMapper<PerkDTO, Perk> {
     @Named("cardId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
     CardDTO toDtoCardId(Card card);
 }

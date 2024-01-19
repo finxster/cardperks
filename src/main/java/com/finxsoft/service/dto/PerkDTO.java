@@ -24,6 +24,8 @@ public class PerkDTO implements Serializable {
 
     private CardDTO card;
 
+    private String cardName;
+
     public Long getId() {
         return id;
     }
@@ -80,6 +82,14 @@ public class PerkDTO implements Serializable {
         this.card = card;
     }
 
+    public String getCardName() {
+        return cardName;
+    }
+
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -102,16 +112,18 @@ public class PerkDTO implements Serializable {
     }
 
     // prettier-ignore
+
     @Override
     public String toString() {
         return "PerkDTO{" +
-            "id=" + getId() +
-            ", name='" + getName() + "'" +
-            ", description='" + getDescription() + "'" +
-            ", expirationDate='" + getExpirationDate() + "'" +
-            ", active='" + getActive() + "'" +
-            ", expired='" + getExpired() + "'" +
-            ", card=" + getCard() +
-            "}";
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", description='" + description + '\'' +
+            ", expirationDate=" + expirationDate +
+            ", active=" + active +
+            ", expired=" + expired +
+            ", card=" + card +
+            ", cardName='" + cardName + '\'' +
+            '}';
     }
 }

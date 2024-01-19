@@ -14,6 +14,7 @@ public class StoreDTO implements Serializable {
     private String name;
 
     private PerkDTO perk;
+    private String perkName;
 
     public Long getId() {
         return id;
@@ -37,6 +38,14 @@ public class StoreDTO implements Serializable {
 
     public void setPerk(PerkDTO perk) {
         this.perk = perk;
+    }
+
+    public String getPerkName() {
+        return perkName;
+    }
+
+    public void setPerkName(String perkName) {
+        this.perkName = perkName;
     }
 
     @Override
@@ -64,9 +73,10 @@ public class StoreDTO implements Serializable {
     @Override
     public String toString() {
         return "StoreDTO{" +
-            "id=" + getId() +
-            ", name='" + getName() + "'" +
-            ", perk=" + getPerk() +
-            "}";
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", perk=" + perk +
+            ", perkName='" + perkName + '\'' +
+            '}';
     }
 }

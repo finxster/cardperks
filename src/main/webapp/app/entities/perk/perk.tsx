@@ -152,7 +152,7 @@ export const Perk = () => {
                   <td>{perk.expirationDate ? <TextFormat type="date" value={perk.expirationDate} format={APP_DATE_FORMAT} /> : null}</td>
                   <td>{perk.active ? 'true' : 'false'}</td>
                   <td>{perk.expired ? 'true' : 'false'}</td>
-                  <td>{perk.card ? <Link to={`/card/${perk.card.id}`}>{perk.card.id}</Link> : ''}</td>
+                  <td>{perk.card ? <Link to={`/card/${perk.card.id}`}>{perk.card.name}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/perk/${perk.id}`} color="info" size="sm" data-cy="entityDetailsButton">
