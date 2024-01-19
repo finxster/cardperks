@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20240119202624"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "card",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Card",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "perk",
+      "otherEntityRelationshipName": "card",
+      "relationshipName": "perk",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

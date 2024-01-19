@@ -1,0 +1,30 @@
+{
+  "cardperksApp": {
+    "perk": {
+      "home": {
+        "title": "Perks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Perk",
+        "createOrEditLabel": "Create or edit a Perk",
+        "notFound": "No Perks found"
+      },
+      "created": "A new Perk is created with identifier {{ param }}",
+      "updated": "A Perk is updated with identifier {{ param }}",
+      "deleted": "A Perk is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Perk {{ id }}?"
+      },
+      "detail": {
+        "title": "Perk"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "expirationDate": "Expiration Date",
+      "active": "Active",
+      "expired": "Expired",
+      "store": "Store",
+      "card": "Card"
+    }
+  }
+}

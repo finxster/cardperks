@@ -1,0 +1,27 @@
+
+entity Card {
+	name String
+}
+
+entity Store {
+	name String
+}
+
+entity Perk {
+	name String
+    description String
+    expirationDate Instant
+    active Boolean
+    expired Boolean
+}
+
+relationship OneToMany {
+	Card to Perk{card},
+    Perk to Store{perk},
+}
+
+// Set pagination options
+paginate * with pagination
+dto * with mapstruct
+service * with serviceClass
+
