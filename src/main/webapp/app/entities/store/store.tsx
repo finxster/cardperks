@@ -131,7 +131,7 @@ export const Store = () => {
                     </Button>
                   </td>
                   <td>{store.name}</td>
-                  <td>{store.perk ? <Link to={`/perk/${store.perk.id}`}>{store.perk.id}</Link> : ''}</td>
+                  <td>{store.perk ? <Link to={`/perk/${store.perk.id}`}>{store.perk.name}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/store/${store.id}`} color="info" size="sm" data-cy="entityDetailsButton">

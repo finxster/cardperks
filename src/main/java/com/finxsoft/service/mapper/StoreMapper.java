@@ -17,5 +17,6 @@ public interface StoreMapper extends EntityMapper<StoreDTO, Store> {
     @Named("perkId")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
     PerkDTO toDtoPerkId(Perk perk);
 }

@@ -140,7 +140,7 @@ export const PerkUpdate = () => {
                 {cards
                   ? cards.map(otherEntity => (
                       <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
+                        {otherEntity.name}
                       </option>
                     ))
                   : null}
